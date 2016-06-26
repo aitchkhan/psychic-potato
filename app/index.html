@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+  </head>
+  <body ng-app="angularStarterApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+    <!--Yeoman team UI-->
+    <!-- Add your site or application content here -->
+   <!-- <div class="header">
+      <div class="navbar navbar-default" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="#/">angularStarter</a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="js-navbar-collapse">
+
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#/">Home</a></li>
+              <li><a ng-href="#/about">About</a></li>
+              <li><a ng-href="#/">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>-->
+
+    <!--Materialize Lite-->
+    <!-- Simple header with scrollable tabs. -->
+   <!-- <div class="mdl-layout mdl-js-layout mdl-layout&#45;&#45;fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          &lt;!&ndash; Title &ndash;&gt;
+          <span class="mdl-layout-title">Title</span>
+        </div>
+        &lt;!&ndash; Tabs &ndash;&gt;
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+          <a href="#scroll-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+          <a href="#scroll-tab-2" class="mdl-layout__tab">Tab 2</a>
+          <a href="#scroll-tab-3" class="mdl-layout__tab">Tab 3</a>
+          <a href="#scroll-tab-4" class="mdl-layout__tab">Tab 4</a>
+          <a href="#scroll-tab-5" class="mdl-layout__tab">Tab 5</a>
+          <a href="#scroll-tab-6" class="mdl-layout__tab">Tab 6</a>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Title</span>
+      </div>
+      <main class="mdl-layout__content">
+        <section class="mdl-layout__tab-panel is-active" id="scroll-tab-1">
+          <div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-2">
+          <div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-3">
+          <div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-4">
+          <div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-5">
+          <div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>
+        </section>
+        <section class="mdl-layout__tab-panel" id="scroll-tab-6">
+          <div class="page-content">&lt;!&ndash; Your content goes here &ndash;&gt;</div>
+        </section>
+      </main>
+    </div>-->
+
+
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">DC</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation. We hide it in small screens. -->
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="/#/create-order">Create Order</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Starter</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="/#/create-order">Create Order</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+          <a class="mdl-navigation__link" href="">Link</a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content">
+          <!-- Your content goes here -->
+          <div ng-view=""></div>
+        </div>
+      </main>
+    </div>
+
+    <!--<div class="container">
+
+    </div>-->
+
+    <div class="footer">
+      <div class="container">
+        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/material-design-lite/material.min.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/about.js"></script>
+        <script src="scripts/services/task.js"></script>
+        <script src="scripts/controllers/create-order.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
